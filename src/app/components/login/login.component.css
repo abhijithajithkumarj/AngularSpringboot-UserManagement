@@ -1,0 +1,74 @@
+.container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #000; /* Set the background color to black */
+    margin-top: 100px;
+    opacity: 0;
+    transform: scale(0.9); /* Initial scale effect */
+    animation: fadeInAndScale 0.5s ease-in-out forwards;
+    color: #ccc;
+}
+
+@keyframes fadeInAndScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    opacity: 0; /* Additional opacity effect for form elements */
+    transform: translateY(-10px); /* Initial vertical translation effect */
+    animation: fadeInAndTranslate 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeInAndTranslate {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out;
+}
+
+input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
